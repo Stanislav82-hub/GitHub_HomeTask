@@ -12,7 +12,7 @@ int Result(int a, int b)
 {
     int degree = 1;
     int result = a;
-    while (degree <= b-1)
+    while (degree <= b - 1)
     {
         result = result * a;
         degree++;
@@ -22,6 +22,6 @@ int Result(int a, int b)
 
 int a = FillInNumber();
 int b = FillInNumber();
-Result( a, b);
+Result(a, b);
 
 Console.Write(Result(a, b));
