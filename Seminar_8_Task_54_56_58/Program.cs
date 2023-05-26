@@ -57,8 +57,9 @@ void SortToLower(int[,] array)
 
 void Seminar_8_Tasks_54()
 {
-    PrintArrayInt(CreateTwoDimensionArrayInt(7, 7));
-    int[,] temp = CreateTwoDimensionArrayInt(7, 7);
+    int[,] temp = CreateTwoDimensionArrayInt(4, 4);
+    Console.WriteLine("Initial array is:");
+    PrintArrayInt(temp);
     SortToLower(temp);
     PrintArrayInt(temp);
 }
@@ -149,6 +150,6 @@ void Seminar_8_Tasks_58()
 
 
 
-//Seminar_8_Tasks_54();
+Seminar_8_Tasks_54();
 //Seminar_8_Tasks_56();
-Seminar_8_Tasks_58();
+//Seminar_8_Tasks_58();
