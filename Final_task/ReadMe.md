@@ -40,43 +40,49 @@
    *   Проверяем количество элементов первичного массива соответствующих критериям задачи
    *   Если ни один элемент не подходит, то выводим об этом уведомление
    *   Создаём и заполняем массив равный по размерности результатам проверки и выводим его.
-  ```C#
-  int n = 0;
-    for (int i = 0; i < AnitialArray.Length; i++)
+    ```C#
+    void SecondArrayLength(string[] AnitialArray)
     {
-        if (AnitialArray[i].Length <= 3)
-        n++;
-    }
-
-    if (n < 1)
-    {
-        Console.WriteLine("There are no elements in AnitialArray to include in FinalArray");
-
-    }
-    else
-    {
-        Console.WriteLine();
-        Console.WriteLine($"Length of FinalArray is {n} elements and they are following:");
-
-        string[] FinalArray = new string[n];
-
-
-        int j = 0;
+        int n = 0;
         for (int i = 0; i < AnitialArray.Length; i++)
         {
-         if (AnitialArray[i].Length <= 3)
-         {
-            FinalArray[j] = AnitialArray[i];
-            j++;
-         }
+            if (AnitialArray[i].Length <= 3)
+            n++;
         }
 
-        for (int i = 0; i < FinalArray.Length; i++)
+        if (n < 1)
         {
-            Console.Write($" {FinalArray[i]} |");
+            Console.WriteLine("There are no elements in AnitialArray to include in FinalArray");
+
         }
-    }
-  ```
+         else
+        {
+            Console.WriteLine();
+            Console.WriteLine($"Length of FinalArray is {n} elements and they are following:");
+
+            string[] FinalArray = new string[n];
+
+
+          int j = 0;
+          for (int i = 0; i < AnitialArray.Length; i++)
+          {
+            if (AnitialArray[i].Length <= 3)
+             {
+                 FinalArray[j] = AnitialArray[i];
+                 j++;
+             }
+          }
+
+            for (int i = 0; i < FinalArray.Length; i++)
+            {
+                Console.Write($" {FinalArray[i]} |");
+            }
+        }
+    } 
+3. Инициализируем программу
+    ```c#
+    SecondArrayLength(CreateAnitialArray());
+    ```  
   ***
   ## Задача решена. ##
 
